@@ -32,6 +32,17 @@ function createJsonString(data){
         }
         expenditureArray.push(jsonData);
     }
+
     console.log(expenditureArray);
+    writeToJsonFile(expenditureArray);
     
+}
+
+function writeToJsonFile(jsonData){
+    jsonData = JSON.stringify(jsonData);
+    fs.writeFile("data.json", jsonData, function(err){
+        if(err){
+            console.log("Cannot write to file: " + err);
+        }
+    });
 }
