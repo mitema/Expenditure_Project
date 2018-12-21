@@ -32,7 +32,6 @@ function createJsonString(data){
         }
         expenditureArray.push(jsonData);
     }
-    console.log("results: ");
     console.log(expenditureArray);
     
 }
