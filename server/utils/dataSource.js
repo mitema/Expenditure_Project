@@ -4,7 +4,7 @@ const csv = require("fast-csv");
 let stream  = null;
 let testData = [];
 try{
-    stream  = fs.createReadStream("server/utils/files/expenditure.csv");
+    stream  = fs.createReadStream("server/utils/files/expenditur.csv");
 }
 catch(error){
     console.log("Error reading files: " + error);
